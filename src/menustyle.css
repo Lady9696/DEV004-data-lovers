@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Supermercado One', tangerine;
+    /*font-family: sans-serif;*/
+}
+
+#menuhorizontal {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#menuhorizontal {
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #ff0000;
+    background-color: transparent;
+    padding: 4px 5px;
+    /*border-right: 1px solid blue;*/
+    font-family: 'Supermercado One', tangerine;
+    font-size: 30px;
+    float: left;
+}
+
+#menuhorizontal li {
+    /*titulo de la pagina del video*/
+    justify-content: center;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+#menuhorizontal a:hover {
+    background-color: #336699;
+}
+
+.fa fa-bars site-nav--icon {
+    Color: white;
+    Font size: 50px;
+    Margin: 30px;
+    padding: 5px 5px;
+}
+
+.fa-solid fa-hat-witch {
+    Color: white;
+    Font size: 50px;
+    Margin: 30p;
+}
+
+.fa-duotone fa-castle {
+    Color:white;
+    Font size: 50px;
+    Margin: 30px;
+}
+
+video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Supermercado One', tangerine;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 25px;
+    color: rgba(181, 190, 149, 0.719);
+}
+
+/*codigos nos servirán para que sean responsives en diferentes equipos :)*/
+@media(max-width:767px) {
+    .img-act1 {
+        padding: 20px 0 10px 65px
+    }
+
+    .col-xs-12 {
+        width: 100%
+    }
+
+    .col-xs-9 {
+        width: 75%
+    }
+
+    .col-xs-8 {
+        width: 66.66666667%
+    }
+
+    .col-xs-6 {
+        width: 50%
+    }
+
+    .col-xs-4 {
+        width: 33.33333333%
+    }
+
+    .col-xs-3 {
+        width: 25%
+    }
+}
+
+@media(max-width:991px) and (min-width:768px) {
+    .img-act1 {
+        padding: 20px 0 10px 65px
+    }
+
+    .col-sm-12 {
+        width: 100%
+    }
+
+    .col-sm-9 {
+        width: 75%
+    }
+
+    .col-sm-6 {
+        width: 50%
+    }
+
+    .col-sm-4 {
+        width: 33.33333333%
+    }
+
+    .col-sm-3 {
+        width: 25%
+    }
+}
+
+@media(max-width:1199px) and (min-width:992px) {
+    .img-act1 {
+        padding: 20px 0 10px 45px
+    }
+
+    .col-md-12 {
+        width: 100%
+    }
+
+    .col-md-6 {
+        width: 50%
+    }
+
+    .col-md-9 {
+        width: 75%
+    }
+
+    .col-md-4 {
+        width: 33.33333333%
+    }
+
+    .col-md-3 {
+        width: 25%
+    }
+}
+
+@media(min-width:1200px) {
+    h1 {
+        font-size: 38px
+    }
+
+    h3,
+    h4 {
+        padding: 0 0 15px 20px
+    }
+
+    .img-act1 {
+        padding: 20px 0 10px 68px
+    }
+
+    .box {
+        padding: 20px 0 15px 50px
+    }
+
+    .col-lg-12 {
+        width: 100%
+    }
+
+    .col-lg-9 {
+        width: 75%
+    }
+
+    .col-lg-6 {
+        width: 50%
+    }
+
+    .col-lg-4 {
+        width: 33.33333333%
+    }
+
+    .col-lg-3 {
+        width: 25%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        position: fixed;
+        height: 200px;
+    }
+
+    #characters {
+        margin-inline-start: auto;
+        margin-top: 200px
+    }
+
+    h2 {
+        padding: 50px 0 29px 70px
+    }
+}
