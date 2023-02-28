@@ -1,4 +1,3 @@
-/
 <!DOCTYPE html>
 <html>
 
@@ -8,21 +7,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!---responsive linea 7 y 8-->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Patronus Harry Potter</title>
-  <link rel="stylesheet" href="indexstyle.css" />
+  <link rel="stylesheet" href="patronus.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap">
-  <!---fonts linea 11 y 12-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <header>
-    <section class="filtros">
-      <label for="ordenPatronus">Patronus Order</label>
-      <select id="ordenPatronus" name="select">
-        <option value="todos">all Characters</option>
-        <option value="ascendente1">A-Z</option>
-        <option value="descendente1">Z-A</option>
-      </select>
+    <nav class="navega2">
+      <img class="imagenlogofondo2" src="https://fondosmil.com/fondo/38466.jpg">
+    </nav>
+
+    <section class="menu-patronus"> <!---header-->
+      <nav class="menu">
+        <ul>
+          <li> <a href="menu.html" class="textoMenuIndex">Menu</a></li>
+          <li> <a href="menupatronus.html" class="textoMenuIndex">Patronus</a></li>
+        </ul>
+      </nav>
+    </section>
+
+      <nav class="filtrosPatronus">
+        <label for class="ordenPatronus">Character and Patronus</label>
+        <select id="ordenPatronus" name="select">
+          <option value="todos">all Characters</option>
+          <option value="ascendente1">A-Z</option>
+          <option value="descendente1">Z-A</option>
+        </select>
+        <section class="buscadorPatronus">
+          <input id="buscar" type="text">
+          <button class="boton" id="boton">Search Character</button>
+        </section>
+
+        
+      </nav>
   </header>
 
   <section>
@@ -31,8 +52,8 @@
     </main>
   </section>
 
-  <script src="data.js" type="module" defer></script>
-  <script src="mainpatronus.js" type="module" defer></script>
+  
+  <script src="mainpatronus.js" type="module"></script>
 
 
 </body>
