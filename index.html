@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Characters Data Lovers Harry Potter</title>
+  <link rel="stylesheet" href="indexstyle.css" />  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Supermercado+One&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!---fonts linea 11 y 12-->
+</head>
+
+<body>
+  <header>
+    <nav class="navega1">
+      <img class="imagenlogofondo" src="https://fondosmil.com/fondo/38466.jpg">
+    </nav>
+
+
+    <form  id = "formulario">
+    <section class="menu-filtros">
+      <nav class="menu">
+        <ul>
+          <li><a href="menu.html" class="textoMenuIndex">Menu</a></li>
+          <li><a href="menupatronus.html" class="textoMenuIndex">Patronus</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" id="buscarIndex" class="buscarIndex" placeholder="Search Character">
+          <button class="searchButton" id="boton">Search Character</button>
+        </div>
+      </nav>
+
+      <nav class=filtros>
+        <div class ="filtro">
+        <label for="alphabetical">Choose a character</label>
+        <select id="alphabetical" name="select">
+          <option value="all Characters" selected>all Characters</option>
+          <option value="ascendente">A-Z</option>
+          <option value="descendente">Z-A</option>
+        
+        </select>
+      </div>
+      <div class ="filtro">
+        <label for="Casas">Hogwarts Houses</label>
+        <select id="casas" name="casas">
+          <option value="all Houses" selected>all Houses</option>          
+          <option value="Gryffindor" 	>Gryffindor</option>
+          <option value="Hufflepuff" >Hufflepuff</option>
+          <option value="Revenclaw">Revenclaw</option>
+          <option value="Slytherin">Slytherin</option>
+        </select>
+      </div>
+      <div class ="filtro">
+        <label for="power">Most Powerful</label>
+        <select id="gender" name="power">          
+          <option value="all characters" selected>all Characters</option>
+          <option value="Female">Witches</option>
+          <option value="Male">Wizards</option>
+        </select>
+      </div>    
+ </header>  
+
+
+    <section>      
+
+      <article>
+        <p id="resultados"></p> <!---se crea elemento para hacer el texto dinamico-->
+      </article>
+    
+      <div id ="reset">
+      <button id="btn-reset">Reset</button>
+      </div>
+      
+    </section>
+
+
+
+    <section>
+      <main id="container">
+
+
+
+      </main>
+    </section>
+
+
+    <script src="main.js" type="module"></script>
+    
+
+</body>
+
+</html>
